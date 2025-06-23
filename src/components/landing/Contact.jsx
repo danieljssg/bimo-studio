@@ -48,14 +48,11 @@ export default function Contact() {
   return (
     <section className="min-h-screen py-20 px-4 flex flex-col items-center justify-center">
       <div className="w-full max-w-md">
-        <h2
-          className="text-4xl md:text-5xl mb-8 text-center"
-          style={{ fontFamily: "'Italiana', serif" }}
-        >
+        <h2 className="text-4xl md:text-5xl mb-8 text-center font-serif">
           Contacto
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>
             <label
               htmlFor="name"
